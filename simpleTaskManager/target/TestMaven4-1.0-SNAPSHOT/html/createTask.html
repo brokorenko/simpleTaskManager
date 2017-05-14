@@ -1,0 +1,17 @@
+<div class="section">
+    <h3>{{headingTitle}}</h3>
+    <div class="createProject-section">
+        <div>
+            <label>Task name:</label>
+            <label>
+                <input data-ng-model="taskFromForm.task_name" type="text">
+            </label>
+            <label>Project id:</label>
+            <label>
+                <input data-ng-model="taskFromForm.project_id" type="text">
+            </label>
+        </div>
+        <input data-ng-click="submit()" type="button"
+               value="Submit the form">
+    </div>
+</div>

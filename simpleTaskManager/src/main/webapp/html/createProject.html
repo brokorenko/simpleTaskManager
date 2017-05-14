@@ -1,0 +1,50 @@
+<!--<div class="section">
+    <h3>{{headingTitle}}</h3>
+    <div class="createProject-section">
+    <div>
+        <label>Project name:</label>
+        <label>
+            <input data-ng-model="projectFromForm.project_name" type="text">
+        </label>
+    </div>
+        <input data-ng-click="submit()" type="button"
+               value="Submit the form">
+    </div>
+</div>-->
+
+    <form name="createProjectController" ng-submit="submit();">
+<table>
+    <tr>
+        <td>Name</td><td><input type="text" ng-model="projectFromForm.project_name"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" value="submit"></td>
+    </tr>
+
+</table>
+    </form>
+
+<!--
+<html data-ng-app="FormApp">
+<head>
+</head>
+<body data-ng-controller="FormController">
+<h1>Please enter your personal information:</h1>
+<ul>
+    <li data-ng-repeat="message in messages">{{message}}</li>
+</ul>
+<div>
+    <label>First name:</label>
+    <input data-ng-model="data.firstName" type="text">
+</div>
+<div>
+    <label>Age:</label>
+    <input data-ng-model="data.age" type="text">
+</div>
+<div>
+    <input data-ng-click="submit()" type="button"
+           value="Submit the form">
+</div>
+</body>
+</html>
+-->
